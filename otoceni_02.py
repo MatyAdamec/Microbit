@@ -13,8 +13,8 @@ def on_forever():
         bod1[0] = x
         bod1[1] = y
 
-    for h in body:  #vykreslit body
-        led.plot(h[0], h[1])
+    for c in body:  #vykreslit body
+        led.plot(c[0], c[1])
     
     led.plot_brightness(S[0], S[1], 50)
     pause(500)
@@ -26,8 +26,8 @@ def on_forever():
         bod2[0] = t
         bod2[1] = o
 
-    for p in body2: #vykreslit body
-        led.plot(p[0], p[1])
+    for g in body2: #vykreslit body
+        led.plot(g[0], g[1])
     
     led.plot_brightness(S[0], S[1], 50)
     pause(500)
