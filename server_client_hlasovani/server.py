@@ -10,6 +10,7 @@ def recieving_():
     global receiving
     if receiving == True:
         receiving = False
+        radio.send_value("enabled", 0)
     else:
         receiving = True
 input.on_button_pressed(Button.A, recieving_)
